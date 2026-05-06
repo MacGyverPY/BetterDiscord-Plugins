@@ -22,26 +22,16 @@ Example
 JohnDoe   [18 Mutual]
 
 Hovering the badge displays:
-
-HEAVEN
-Gaming Hub
-Fallout 76 Lounge
-Modding Community
-Installation
-Install BetterDiscord
-Download MutualServerCounter.plugin.js
-Place the file into your BetterDiscord plugins folder
-Enable the plugin in:
-Settings → BetterDiscord → Plugins
 Notes
 Mutual server counts are calculated locally using Discord's cached guild/member stores
 No external services are used
 Does not send or collect user data
 Designed to remain lightweight and low-overhead
+
 Known Limitations
 Discord internal updates may occasionally require selector/store adjustments
 Extremely large server lists may slightly increase processing time
 Some usernames rendered in uncommon layouts may not inject properly
-Disclaimer
 
+Disclaimer
 This plugin is intended for informational and quality-of-life purposes only. It does not bypass Discord permissions, moderation systems, or privacy restrictions.
