@@ -1,6 +1,6 @@
 /**
  * @name MutualServerCounter
- * @author ChatGPT
+ * @author GOD128
  * @description Displays mutual server count beside usernames in chat.
  * @version 1.0.0
  */
