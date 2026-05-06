@@ -1,11 +1,47 @@
-BetterDiscord Plugins
+MutualServerCounter
 
-This repository contains small, lightweight, and genuinely useful BetterDiscord plugins focused on improving the Discord experience without unnecessary bloat or gimmicks. The goal is to create plugins that feel native to Discord while providing extra functionality, useful information, and quality-of-life improvements that should honestly already exist.
-Most plugins here are designed to be simple, efficient, visually clean, and easy to use. No shady automation, no token abuse, and no overcomplicated nonsense — just practical enhancements built for everyday use.
+A lightweight BetterDiscord plugin that displays mutual server counts directly beside usernames in chat.
 
-Plugin List
+Instead of opening user profiles manually, MutualServerCounter instantly shows how many servers you share with other users, complete with color-coded indicators and optional hover tooltips listing mutual guild names.
 
-- MutualServerCounter
+Features
+Displays mutual server counts beside usernames in chat
+Color-coded badges based on mutual server count
+Hover tooltip showing shared server names
+Lightweight and fully client-side
+Automatically updates while scrolling chat
+No external API requests
+No token usage or account modification
+Badge Colors
+Count	Color
+0–2	Gray
+3–10	Yellow
+11–30	Green
+30+	Purple
+Example
+JohnDoe   [18 Mutual]
 
-Displays mutual server counts directly beside usernames in chat, allowing you to instantly see how many servers you share with another user without opening their profile. The plugin color-codes mutual counts based on how many shared servers exist and includes hover tooltips that list the mutual guild names.
-The plugin works entirely client-side using Discord's already-loaded guild and member stores, meaning no external API requests or additional account permissions are required.
+Hovering the badge displays:
+
+HEAVEN
+Gaming Hub
+Fallout 76 Lounge
+Modding Community
+Installation
+Install BetterDiscord
+Download MutualServerCounter.plugin.js
+Place the file into your BetterDiscord plugins folder
+Enable the plugin in:
+Settings → BetterDiscord → Plugins
+Notes
+Mutual server counts are calculated locally using Discord's cached guild/member stores
+No external services are used
+Does not send or collect user data
+Designed to remain lightweight and low-overhead
+Known Limitations
+Discord internal updates may occasionally require selector/store adjustments
+Extremely large server lists may slightly increase processing time
+Some usernames rendered in uncommon layouts may not inject properly
+Disclaimer
+
+This plugin is intended for informational and quality-of-life purposes only. It does not bypass Discord permissions, moderation systems, or privacy restrictions.
