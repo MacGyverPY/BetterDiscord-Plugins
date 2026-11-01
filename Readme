@@ -1,0 +1,84 @@
+# BetterDiscord Plugins
+
+A collection of lightweight BetterDiscord plugins by **GOD3128**.
+
+## Available plugins
+
+| Plugin | Description | Download |
+| --- | --- | --- |
+| **MutualServerCounter** | Displays mutual server counts beside usernames in chat, with color-coded badges and hover details. | [MutualServerCounter.plugin.js](./MutualServerCounter.plugin.js) |
+| **ModLens** | Member inspector with server details, roles, local notes, and in-panel message and attachment search. | [ModLens.plugin.js](./ModLens.plugin.js) |
+
+## ModLens
+
+**Version:** 0.4.8 (stable; clickable website footer update)  
+**Author:** GOD3128  
+**Website:** [hevn.cc](https://hevn.cc)
+
+ModLens adds an **Open ModLens** action to Discord user context menus. It opens a sidebar with user and server membership information, including copyable IDs and role details.
+
+### Features
+
+- View account details, server membership, and assigned roles; click details or roles to copy IDs.
+- **DM User**: open an existing one-to-one DM or create one using Discord's native functions.
+- **Share Info**: copy a member report and open Discord's group-message composer.
+- Search a selected member's **Messages**, **Images**, **Videos**, and **Files** in the current server using Discord's authenticated search endpoint.
+- View results inside ModLens, including small image previews, message links, and Previous/Next page navigation (up to ten message cards per page).
+- Save private notes locally on the current computer.
+- View, copy, or export session diagnostic logs.
+- Click the footer's **hevn.cc** link to open the project website.
+
+### Notes and limitations
+
+- Search only returns messages Discord makes available to your account in the selected server. Deleted or inaccessible messages cannot be retrieved.
+- Search results are not stored by ModLens. Discord's search endpoint handles access and rate limits.
+- Results are paginated by **message**, not by individual attachment. Only the first matching attachment in each message is previewed; open the original Discord message to see the rest.
+- Notes are stored locally via BetterDiscord data storage. Right-click **Paste** in Notes may be blocked by clipboard permissions; use **Ctrl+V** instead.
+- Discord client updates may require future compatibility changes.
+
+### Install
+
+1. Download [ModLens.plugin.js](./ModLens.plugin.js).
+2. Place it in your BetterDiscord plugins folder.
+3. Enable **ModLens** under Discord **Settings → BetterDiscord → Plugins**.
+
+## MutualServerCounter
+
+A lightweight BetterDiscord plugin that displays mutual server counts directly beside usernames in chat.
+
+Instead of opening user profiles manually, MutualServerCounter instantly shows how many servers you share with other users, complete with color-coded indicators and optional hover tooltips listing mutual guild names.
+
+### Features
+
+- Displays mutual server counts beside usernames in chat.
+- Color-coded badges based on mutual server count.
+- Hover tooltip showing shared server names.
+- Lightweight and fully client-side.
+- Automatically updates while scrolling chat.
+- No external API requests.
+- No token usage or account modification.
+
+### Badge colors
+
+| Count | Color |
+| --- | --- |
+| 0–2 | Gray |
+| 3–10 | Yellow |
+| 11–30 | Green |
+| 30+ | Purple |
+
+Example: `JohnDoe [18 Mutual]`
+
+### Notes
+
+Mutual server counts are calculated locally using Discord's cached guild/member stores. No external services are used. The plugin does not send or collect user data and is designed to remain lightweight and low-overhead.
+
+### Known limitations
+
+- Discord internal updates may occasionally require selector/store adjustments.
+- Extremely large server lists may slightly increase processing time.
+- Some usernames rendered in uncommon layouts may not inject properly.
+
+## Disclaimer
+
+These plugins are intended for informational and quality-of-life purposes only. They do not bypass Discord permissions, moderation systems, or privacy restrictions. BetterDiscord is a third-party modification of Discord and is not officially supported by Discord.
